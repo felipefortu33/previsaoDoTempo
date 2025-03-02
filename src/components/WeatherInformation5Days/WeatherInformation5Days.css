@@ -1,0 +1,151 @@
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.weather-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.weather-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Ajuste do card para ser maior e comportar melhor os textos */
+.weather-item {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px;  /* Aumentei o tamanho para comportar o conteúdo */
+    height: 200px; /* Altura aumentada */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Garante que o conteúdo centralize no card */
+    align-items: center;
+    overflow: hidden; /* Impede o conteúdo de sair dos limites do card */
+    word-wrap: break-word; /* Garante que o texto longo seja quebrado */
+    min-height: 180px; /* Garante altura mínima para os textos */
+}
+
+.weather-item:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.forecast-day {
+    font-size: 1.2rem; /* Aumentando o tamanho do texto para os dias da semana */
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    white-space: nowrap; /* Evita que o texto saia do card */
+}
+
+.forecast-description {
+    font-size: 1rem; /* Aumentei o tamanho da descrição */
+    color: #555;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    white-space: nowrap; /* Evita que o texto saia do card */
+}
+
+.weather-item img {
+    width: 50px; /* Tamanho ajustado para os ícones */
+    height: 50px;
+    margin: 5px 0;
+}
+
+.weather-item p {
+    margin: 2px 0;
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .weather-container {
+        padding: 15px;
+    }
+
+    .weather-item {
+        width: 150px;
+        height: 180px; /* Ajustando para telas médias */
+    }
+
+    .forecast-day {
+        font-size: 1.1rem;
+    }
+
+    .forecast-description {
+        font-size: 0.95rem;
+    }
+
+    .weather-item img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .weather-container {
+        padding: 10px;
+    }
+
+    .weather-item {
+        width: 140px;
+        height: 160px; /* Ajustando para telas menores */
+    }
+
+    .forecast-day {
+        font-size: 1rem;
+    }
+
+    .forecast-description {
+        font-size: 0.9rem;
+    }
+
+    .weather-item img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-container {
+        padding: 5px;
+    }
+
+    .weather-item {
+        width: 120px;
+        height: 140px; /* Ajustando para telas pequenas */
+    }
+
+    .forecast-day {
+        font-size: 0.9rem;
+    }
+
+    .forecast-description {
+        font-size: 0.8rem;
+    }
+
+    .weather-item img {
+        width: 35px;
+        height: 35px;
+    }
+}
