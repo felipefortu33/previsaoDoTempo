@@ -1,4 +1,5 @@
-[Captura de tela 2025-03-01 202537](https://github.com/user-attachments/assets/05f8150c-c224-4ab1-8281-e12e4e8d0ab4)
+![Minha Imagem do Projeto]([https://github.com/usuario/repo/blob/main/imagens/minha-imagem.png?raw=true](https://raw.githubusercontent.com/felipefortu33/previsaoDoTempo/136d9d96825b374fa61f8a548f947dbb7fa2e661/Captura%20de%20tela%202025-03-01%20202537.png))
+
 
 
 # React + Vite
